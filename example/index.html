@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="header">
+    <button id="startRegionMgr" class="btn">Start First Region Manager</button>
+    <button id="startPrevRegionMgr" class="btn">Start Prev Region Manager</button>
+    <button id="startNextRegionMgr" class="btn">Start Next Region Manager</button>
+    <button id="stopRegionMgr" class="btn">Stop Active Region Manager</button>
+  </div>
+
+  <div class="region-activated">Activated Region: <span class="active-region-name"></span></div>
+  <div class="region-activated-tag">Select a region...</div>
+  
+  <div class="region-container">
+    <div id="region1" class="region">REGION 1 <span>Click to activate this region</span></div>
+    <div id="region2" class="region">REGION 2 <span>Mouse over to activate this region</span></div>
+    <div id="region3" class="region">REGION 3 <span>DblClick to activate this region</span></div>
+    <div id="region4" class="region">REGION 4 <span>Mouseout to activate this region</span></div>
+    <div style="clear: both;"></div>
+  </div>
+  
+
+  <span class="activation-label">no shortcuts listened</span>
+
+  <script type="text/javascript" src="./vendor/jquery.js"></script>
+  <script type="text/javascript" src="./vendor/class.js"></script>
+  <script type="text/javascript" src="./vendor/hotkeys.js"></script>
+  <script type="text/javascript" src="../dist/shortcutsmgr.min.js"></script>
+  <script type="text/javascript" src="./shortcutsExample.js"></script>
+</body>
+</html

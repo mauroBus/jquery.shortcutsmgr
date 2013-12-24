@@ -1,0 +1,70 @@
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  font-family: arial,sans-serif;
+}
+
+.selectedRegion {
+  border: 3px solid orange;
+}
+
+.btn {
+  padding: 7px;
+}
+
+.header {
+  text-align: center;
+}
+
+.region-container {
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.region-activated {
+  display: block;
+  background: #777;
+  color: white;
+  padding: 6px 20px;
+  margin: 10px 0 10px 10px;
+  border-radius: 4px;
+}
+
+.region-activated-tag {
+  display: inline-block;
+  background: #777;
+  color: white;
+  padding: 20px;
+  margin: 10px 25px;
+  border-radius: 4px;
+}
+
+.active-region-name {
+  font-weight: bolder;
+  padding-left: 16px;
+}
+
+.region {
+  margin: 10px 0;
+  padding: 20px 20px;
+  float: left;
+  width: 48%;
+  height: 60px;
+  background-color: rgb(207, 207, 207);
+  margin-left: 15px;
+}
+
+.region span {
+  color: gray;
+}
+
+.activation-label {
+  display: block;
+  text-align: center;
+  background: #777;
+  color: white;
+  padding: 6px 20px;
+  margin: 10px 0 10px 10px;
+  border-radius: 4px;
+}
