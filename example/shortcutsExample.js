@@ -5,14 +5,6 @@
  * This example is composed by a set of shortcuts regions with handlers for some key events.
  */
 
-
-
-// It has also a region name, that is the DOM selector of the region,
-//  *  so when the user clicks on that region, the region bindings are
-//  *  automatically activated.
-//  * The 'events' param is the mapping with the callback for each shortcut.
-
-
 /******************************************************
  * Instantiating the Shortcut Manager
  ******************************************************/
@@ -35,30 +27,30 @@ var $regionActivatedTag = $('.region-activated-tag');
 var alertEventCaugth = function(msg) {
   var finalMsg = msg || 'Select a region...';
   $regionActivatedTag.text(finalMsg);
-}
+};
 
 var alertRegionActive = function(regionName) {
   $activeRegionName.text(regionName);
-}
+};
 
 var alertActivationLabel = function(msg) {
   $activationLabel
     .text(msg)
     .css("transition","all 0.3s ease")
-    .queue( function(next){ 
+    .queue( function(next) {
       $(this).css({
         'background-color': 'orange'
-      }); 
-      next(); 
+      });
+      next();
     })
     .delay(300)
     .queue( function(next){
       $(this).css({
         'background-color': ''
-      }); 
-      next(); 
+      });
+      next();
     });
-}
+};
 
 
 
