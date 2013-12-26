@@ -1,8 +1,11 @@
 /*
- * Require and initialise PhantomCSS module
- * Paths are relative to CasperJs directory
+ * Run this testsuite with: casperjs test <path-to-this-file>
  */
+
+// Require and initialise PhantomCSS module.
+// Paths are relative to CasperJs directory.
 var phantomcss = require('./phantomcss/phantomcss.js');
+var demoUrl = 'http://localhost/jquery.shortcutsmgr/demo/';
 
 phantomcss.init({
   screenshotRoot: './test-results/screenshots',
@@ -22,7 +25,7 @@ phantomcss.init({
 /*
 The test scenario
 */
-casper.start( 'http://localhost/jquery.shortcutsmgr/example/' );
+casper.start(demoUrl);
 
 casper.viewport(1024, 768);
 
