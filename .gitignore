@@ -1,0 +1,5 @@
+# Logs and databases #
+######################
+*.log
+
+node_modules/
