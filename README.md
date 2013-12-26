@@ -134,9 +134,9 @@ Next, the Shortcut Region parameters are listed:
 * enableInInput: [true | false] This allows apply the bindings inside the inputs. By default this is `false`.
 * selectionClass: The class name to be applied to the region's DOM when the region is active and it is listening its shortcuts.
 * autoActivateEvent: [String] This is an event to manually active the region. The posibilities are:
-	 `blur, focus, focusin, focusout, load, resize, scroll, unload, click, dblclick, mousedown,
-    mouseup, mousemove, mouseover, mouseout, mouseenter, mouseleave, change, select,
-    submit, keydown, keypress, keyup, error, etc`
+	 `blur, focus, focusin, focusout, load, resize, scroll, unload, click, dblclick, mousedown,`
+   `mouseup, mousemove, mouseover, mouseout, mouseenter, mouseleave, change, select,`
+   `submit, keydown, keypress, keyup, error, etc`
 * onEnterRegion: Callback executed when the region is being plugged (activated).
 * onExitRegion: Callback executed when the region is being un-plugged (deactivated).
 
